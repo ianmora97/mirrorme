@@ -152,7 +152,7 @@ h1{
 	animation-duration: 1s;
 }
 #button:active{
-	background-color: #f06;
+	background-color: #660029;
 }
 #button span {
   cursor: pointer;
@@ -243,56 +243,29 @@ h1{
 	margin-left: 5px;
 	margin-top: 5px;
 }
-.images{
-	width: 385px;
-	height: 430px;
-	background-color: white;
-	float: right;
-	margin-right: 5px;
-	margin-top: 5px;
-	padding-left: 0px;
-}
-.images li{
-	display: inline-block;
 
-}
-.img1{
-	width:280px;
-	height: 430px;
-	background-size: cover;
-	border-radius: 10px;
-	animation-name: slide;
-	animation-duration: 15s;
-	animation-iteration-count: infinite;
-}
-@keyframes slide{
-	0%{background-image: url("images/verano/verano1.jpg");}
-	25%{background-image: url("images/verano/verano2.jpg");}
-	50%{background-image: url("images/verano/verano3.jpg");}
-	75%{background-image: url("images/verano/verano5.jpg");}
-	100%{background-image: url("images/verano/verano1.jpg");}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }
 
-/*
-.img2{
-	width:280px;
-	height: 430px;
-	background-image: url("images/verano/verano2.jpg");
-	background-size: cover;
-	position: absolute;
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
 }
-.img3{
-	width:280px;
-	height: 430px;
-	background-image: url("images/verano/verano3.jpg");
-	background-size: cover;
-	position: absolute;
-}
-.img4{
-	width:280px;
-	height: 430px;
-	background-image: url("images/verano/verano5.jpg");
-	background-size: cover;
-	position: absolute;
-}
-*/
+s

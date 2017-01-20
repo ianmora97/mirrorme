@@ -11,12 +11,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$(".clothes").click(function(){
-        $(this).css("background-color","#ff0066");
-    });
-});
-
-$(document).ready(function(){
 	$(".cl_toggle").mouseleave(function(){
         $(".clothes").css("background-color","#660029");
     });
@@ -28,11 +22,7 @@ $(document).ready(function(){
         $(".ac_toggle").slideToggle("slow");
     });
 });
-$(document).ready(function(){
-	$(".acce").click(function(){
-        $(this).css("background-color","#ff0066");
-    });
-});
+
 $(document).ready(function(){
 	$(".ac_toggle").mouseleave(function(){
         $(".acce").css("background-color","#660029");
@@ -50,11 +40,7 @@ $(document).ready(function(){
         $(".sh_toggle").slideToggle("slow");
     });
 });
-$(document).ready(function(){
-	$(".sho").click(function(){
-        $(this).css("background-color","#ff0066");
-    });
-});
+
 $(document).ready(function(){
 	$(".sh_toggle").mouseleave(function(){
         $(".sho").css("background-color","#660029");
