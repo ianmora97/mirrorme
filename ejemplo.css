@@ -1,0 +1,298 @@
+body {
+	background-color: #fff;
+	font-style: "Noto Serif";
+	margin: 0 auto;
+	animation-name: body_a;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	width: 100%;
+	
+}
+@keyframes body_a{
+	
+}
+.bg{
+	/*width: 100%;
+	height: 100%;
+	margin:auto;
+	background-image: url("images/flor_pat.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 20%;
+*/
+}
+/*------------------------los h van aqui----------------------*/
+h1{
+	color: #fff;
+	font-family: 'Fjalla One';
+	font-weight: normal;
+	font-size: 80px;
+	margin: 5px 0;
+	animation-name: logo;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	text-shadow: 1px 1px 5px black;
+}
+@keyframes logof{
+	0% {color:#f06; }
+	50% {color:#4d001f;}
+	100% {color:#f06;}
+}
+
+/*------------------------los h van aqui----------------------*/
+/*------------------------el header----------------------*/
+.header_wrap{
+	width: 820px;
+	margin:0 auto;
+	display: block;
+}
+.tittle{
+	animation-name: tittle;
+	animation-duration: 3s;
+	position:relative;
+}
+@keyframes tittle{
+	from {opacity: 0.0;top:0px;right:820px;}
+	to {opacity: 1.0;top: 0px;right: 0px;}
+}
+.bar_nav{
+	width: 100%;
+	height: 50px;
+	background-color: #660029;
+	position: relative;
+}
+.menu_w{
+	width: 820px;
+	margin:0 auto;
+	height: 50px;
+}
+.nav{
+	animation-name: nav;
+	animation-duration: 2s;
+	position:relative;
+}
+@keyframes nav{
+	from {opacity: 0.0;top:0px;right:820px;}
+	to {opacity: 1.0;top: 0px;right: 0px;}
+}
+.nav li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	margin-left: -4px;
+}
+.nav ul{
+	padding-left:6px;
+}
+#button_a{
+	width: 160px;
+	height: 50px;
+	background-color: #660029;
+	color:white;
+	font-family: 'Arial';
+	font-size: 20px;
+	border:0px;
+	outline:none;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+#button_a:hover {
+	background-color: #f06;
+	animation-name: button_ani;
+	animation-duration: 1s;
+}
+#button_a:active{
+	background-color: #660029;
+}
+#button_a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#button_a span:after {
+  content: ' ';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#button_a:hover span {
+  padding-right: 25px;
+}
+
+#button_a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+@keyframes button_ani {
+	from {background-color:#660029;}
+	to {background-color: #f06;}
+}
+#button {
+	width: 160px;
+	height: 50px;
+	background-color: #660029;
+	color:white;
+	font-family: 'Arial';
+	font-size: 20px;
+	border:0px;
+	outline:none;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+#button:hover {
+	background-color: #f06;
+	animation-name: button_ani;
+	animation-duration: 1s;
+}
+#button:active{
+	background-color: #f06;
+}
+#button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#button:hover span {
+  padding-right: 25px;
+}
+
+#button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.cl_toggle{
+	position: absolute;
+	display: none;
+	margin-left: -2px;
+}
+.cl_toggle li{
+	display: block;
+	width: 162px;
+}
+.ac_toggle{
+	position: absolute;
+	display: none;
+	margin-left: -2px;
+}
+.ac_toggle li{
+	display: block;
+	width: 162px;
+}
+#button_ac{
+	background-color: #f06;
+}
+.sh_toggle{
+	position: absolute;
+	display: none;
+	margin-left: -2px;
+}
+.sh_toggle li{
+	display: block;
+	width: 162px;
+}
+#button_sh{
+	background-color: #f06;
+}
+/*------------------------el header----------------------*/
+
+/*------------------------los h van aqui----------------------*/
+.body_wrap{
+	width:820px;
+	margin:0 auto;
+}
+.content{
+	width: 820px;
+	height: 600px;
+	margin-top: 5px;
+	border:2px solid #e6e6e6;
+	border-radius: 5px;
+}
+.slider{
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 600px;
+	height: 440px;
+	background-color: white;
+	float: right;
+	margin-right: 5px;
+}
+.text{
+	background-color: white;
+	float:left;
+	width: 200px;
+	height: 430px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.images{
+	width: 385px;
+	height: 430px;
+	background-color: white;
+	float: right;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding-left: 0px;
+}
+.images li{
+	display: inline-block;
+
+}
+.img1{
+	width:280px;
+	height: 430px;
+	background-size: cover;
+	border-radius: 10px;
+	animation-name: slide;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+@keyframes slide{
+	0%{background-image: url("images/verano/verano1.jpg");}
+	25%{background-image: url("images/verano/verano2.jpg");}
+	50%{background-image: url("images/verano/verano3.jpg");}
+	75%{background-image: url("images/verano/verano5.jpg");}
+	100%{background-image: url("images/verano/verano1.jpg");}
+}
+
+/*
+.img2{
+	width:280px;
+	height: 430px;
+	background-image: url("images/verano/verano2.jpg");
+	background-size: cover;
+	position: absolute;
+}
+.img3{
+	width:280px;
+	height: 430px;
+	background-image: url("images/verano/verano3.jpg");
+	background-size: cover;
+	position: absolute;
+}
+.img4{
+	width:280px;
+	height: 430px;
+	background-image: url("images/verano/verano5.jpg");
+	background-size: cover;
+	position: absolute;
+}
+*/
