@@ -51,3 +51,11 @@ $(document).ready(function(){
         $(".sh_toggle").slideUp("slow");
     });
 });
+
+
+/*------------------------el header----------------------*/
+$(document).ready(function(){
+    $(".but_mobile").click(function(){
+        $(".bar_nav").slideToggle("slow");
+    });
+});
